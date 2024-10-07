@@ -1,6 +1,6 @@
 {
   "name": "aleo-sdk-node",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Aleo SDK for program execution in NodeJS",
   "main": "index.js",
   "types": "index.d.ts",
