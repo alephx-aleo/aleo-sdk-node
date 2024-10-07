@@ -114,6 +114,7 @@ jobs:
         uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          package: ./npm/${{ matrix.settings.suffix }}
   publish-core:
     name: Publish core SDK
     runs-on: ubuntu-latest
@@ -158,3 +159,4 @@ jobs:
         uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          package: ./npm/core
