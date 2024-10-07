@@ -1,0 +1,63 @@
+{
+  "name": "aleo-sdk-node",
+  "version": "0.0.0",
+  "description": "Aleo SDK for program execution in NodeJS",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alephx-aleo/aleo-sdk-node.git"
+  },
+  "keywords": [
+    "Aleo",
+    "Blockchain",
+    "Zero-Knowledge",
+    "ZK"
+  ],
+  "bugs": {
+    "url": "https://github.com/alephx-aleo/aleo-sdk-node/issues"
+  },
+  "homepage": "https://github.com/alephx-aleo/aleo-sdk-node#readme",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "napi": {
+    "name": "aleo-sdk-node",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "x86_64-apple-darwin",
+        "x86_64-unknown-linux-musl"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.3",
+    "ava": "^6.0.1"
+  },
+  "ava": {
+    "timeout": "3m"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "dev": "npm run build:debug && dotenv node ./test.mjs",
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "optionalDependencies": {
+    "aleo-sdk-node-win32-x64-msvc": "0.0.0",
+    "aleo-sdk-node-darwin-x64": "0.0.0",
+    "aleo-sdk-node-linux-x64-gnu": "0.0.0",
+    "aleo-sdk-node-darwin-arm64": "0.0.0",
+    "aleo-sdk-node-linux-x64-musl": "0.0.0"
+  }
+}

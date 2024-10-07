@@ -1,0 +1,34 @@
+{
+  "name": "aleo-sdk-node-darwin-x64",
+  "version": "0.0.0",
+  "description": "Aleo SDK for program execution in NodeJS",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alephx-aleo/aleo-sdk-node.git"
+  },
+  "keywords": [
+    "Aleo",
+    "Blockchain",
+    "Zero-Knowledge",
+    "ZK"
+  ],
+  "bugs": {
+    "url": "https://github.com/alephx-aleo/aleo-sdk-node/issues"
+  },
+  "homepage": "https://github.com/alephx-aleo/aleo-sdk-node#readme",
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "aleo-sdk-node.darwin-x64.node",
+  "files": [
+    "aleo-sdk-node.darwin-x64.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  }
+}
