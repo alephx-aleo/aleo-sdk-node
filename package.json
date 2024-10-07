@@ -1,6 +1,6 @@
 {
   "name": "aleo-sdk-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Aleo SDK for program execution in NodeJS",
   "main": "index.js",
   "types": "index.d.ts",
@@ -54,10 +54,10 @@
     "version": "napi version"
   },
   "optionalDependencies": {
-    "aleo-sdk-node-win32-x64-msvc": "0.0.0",
-    "aleo-sdk-node-darwin-x64": "0.0.0",
-    "aleo-sdk-node-linux-x64-gnu": "0.0.0",
-    "aleo-sdk-node-darwin-arm64": "0.0.0",
-    "aleo-sdk-node-linux-x64-musl": "0.0.0"
+    "aleo-sdk-node-win32-x64-msvc": "0.1.2",
+    "aleo-sdk-node-darwin-x64": "0.1.2",
+    "aleo-sdk-node-linux-x64-gnu": "0.1.2",
+    "aleo-sdk-node-darwin-arm64": "0.1.2",
+    "aleo-sdk-node-linux-x64-musl": "0.1.2"
   }
 }
